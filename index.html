@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FireUnit: Firebug Unit Testing for Firefox</title>
+<script>
+// Some examples of using FireUnit
+if ( typeof fireunit === "object" ) {
+	// Simple true-like/false-like testing
+	fireunit.ok( true, "I'm going to pass!" );
+	fireunit.ok( false, "I'm going to fail!" );
+
+	// Compare two strings - shows a diff of the
+	// results if they're different
+	fireunit.compare(
+		"The lazy fox jumped over the log.",
+		"The lazy brown fox jumped the log.",
+		"Are these two strings the same?"
+	);
+
+	// Compare a string using a regular expression
+	fireunit.reCompare(
+		"The .* fox jumped the log.",
+		"The lazy brown fox jumped the log.",
+		"Compare a string using a RegExp."
+	);
+
+	// Display the total results
+	fireunit.testDone();
+}
+</script>
+<style>
+html, body { background: #F4F4F4; color: #000; font-family: Helvetica, Arial; font-size: 14px; text-align: center;}
+div.body { margin: 0 auto; width: 600px; background: #FFF; border: 1px solid #DDD; padding: 10px; text-align: left; }
+</style>
+</head>
+<body>
+<div class="body">
+<center>
+<h1>FireUnit: JavaScript Unit Testing Extension</h1>
+
+<img src="fireunit-ui-thumb.png"/><br/>
+<small>(Once you have the extension installed, open the new Test tab in Firebug to see some results.)</small>
+</center><br/>
+
+<b>More Information:</b>
+<ul>
+<li><a href="fireunit-1.0a3.xpi">Download Latest Extension</a> (Requires Firefox 3+ and Firebug 1.2+)</li>
+<li><a href="http://github.com/jeresig/fireunit">Source Code</a></li>
+<li>Blog Posts: <a href="http://ejohn.org/blog/fireunit/">John Resig</a>, <a href="http://www.softwareishard.com/blog/firebug/fireunit-testing-in-the-firebug-world/">Jan Odvarko</a></li>
+</ul>
+</div>
+</body>
+</html>
