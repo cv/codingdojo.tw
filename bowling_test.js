@@ -22,4 +22,5 @@ var tests = {
   "Should fail" : function(assert) {
     assert.ok(typeof 1 === "string", "1 is not a string");
   },
+
 }
