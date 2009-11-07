@@ -2,45 +2,10 @@
 <html>
   <head>
   <title>Bowling Scores</title>
-  <!-- script>
-
-  if ( typeof fireunit === "object" ) {
-    // Simple true-like/false-like testing
-    fireunit.ok( true, "I'm going to pass!" );
-    fireunit.ok( false, "I'm going to fail!" );
-
-    // Compare two strings - shows a diff of the
-    // results if they're different
-    fireunit.compare(
-      "The lazy fox jumped over the log.",
-      "The lazy brown fox jumped the log.",
-      "Are these two strings the same?"
-    );
-
-    // Compare a string using a regular expression
-    fireunit.reCompare(
-      "The .* fox jumped the log.",
-      "The lazy brown fox jumped the log.",
-      "Compare a string using a RegExp."
-    );
-
-    // Display the total results
-    fireunit.testDone();
-  }
-
-  </script !-->
   <script src="jquery-1.3.2.min.js"></script>
-
-<!-- END OF BOILERPLATE -->
-
-  <script>
-if ( typeof fireunit === "object" ) {
-  fireunit.ok(true, "Write tests here!");
-}
-  </script>
-
-<!-- HORRIBLE MARKUP -->
-
+  <script src="bowling.js"></script>
+  <script src="bowling_test.js"></script>
+  <script src="test_runner.js"></script>
   <style>
   body { font-family: Helvetica; font-size: 16pt; }  
   td { border: 1px solid #f0f0f0; text-align: center; height: 2em; min-width: 2em; }
@@ -48,6 +13,7 @@ if ( typeof fireunit === "object" ) {
   .scores td { width: 50px; }
   </style>
   </head>
+
   <body>
     <table class="game">
       <tr class="throws">
